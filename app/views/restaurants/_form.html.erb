@@ -1,0 +1,18 @@
+<%= form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+
+  <%= f.label :category %>
+  <%= f.select :category, [["belgian"], ["french"],  ["chinese"], ["japanese"], ["italian"]] %>
+
+  <%= f.submit %>
+<% end %>
+
+<!-- f.select(:name, [[" "],["option"],["option2"],["option3"]], {}, {:multiple => true})
+ -->
